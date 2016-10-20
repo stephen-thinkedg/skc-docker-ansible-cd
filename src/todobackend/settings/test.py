@@ -1,7 +1,6 @@
 from base import *
 import os
 
-
 # Installed Apps
 INSTALLED_APPS += ('django_nose', )
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
@@ -18,7 +17,6 @@ NOSE_ARGS = [
   '--cover-xml',                    # produce XML coverage info
   '--cover-xml-file=%s/coverage.xml' % TEST_OUTPUT_DIR,
 ]
-
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
